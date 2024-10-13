@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "build",  // This label must match the preLaunchTask in launch.json
+            "type": "shell",
+            "command": "make",  // This command will run `make` to build your project
+            "args": [],
+			"options": {
+                "cwd": "${workspaceFolder}/build"  // Set the working directory to the build folder
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building the project"
+        }
+    ]
+}
